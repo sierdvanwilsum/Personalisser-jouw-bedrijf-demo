@@ -129,6 +129,40 @@ h1, h2 { font-family: var(--serif); font-weight: 400; letter-spacing: 0; }
 .map-marker { display: grid; width: 30px; aspect-ratio: 1; place-items: center; border: 1px solid #62725f; border-radius: 50%; color: #405642; font-size: 18px; }
 .map-location { position: absolute; right: 14px; bottom: 12px; color: #65685e; font-size: 9px; letter-spacing: .3px; }
 
+/* General business template sections */
+.services-section { color: #f8f6f0; background: var(--green); }
+.services-inner { padding-block: 88px 76px; }
+.services-heading, .projects-heading { display: flex; align-items: end; justify-content: space-between; gap: 40px; padding-bottom: 38px; border-bottom: 1px solid rgba(248,246,240,.22); }
+.services-heading .eyebrow { margin-bottom: 14px; color: #c9b89a; }
+.services-heading h2, .projects-heading h2 { margin: 0; font-size: clamp(42px, 5.1vw, 62px); line-height: 1.08; }
+.services-heading > p, .projects-heading > p { max-width: 350px; margin: 0 0 7px; color: #d9ddd5; font-size: 12px; line-height: 1.7; }
+.service-row { display: grid; grid-template-columns: 70px 1fr 1.25fr 20px; align-items: center; gap: 24px; min-height: 110px; border-bottom: 1px solid rgba(248,246,240,.2); }
+.service-number { color: #c9b89a; font: 17px var(--serif); }
+.service-row h3 { margin: 0; color: #f8f6f0; font: 400 26px var(--serif); }
+.service-row p { margin: 0; color: #c3cbc1; font-size: 11px; line-height: 1.6; }
+.service-arrow { justify-self: end; color: #e1d6c1; }
+.projects { padding-block: 108px 116px; }
+.projects-heading { border-bottom-color: var(--line); }
+.projects-heading .eyebrow { margin-bottom: 14px; }
+.projects-heading > p { color: #67675e; }
+.project-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; padding-top: 42px; }
+.project-image { height: 270px; }
+.project-image img { height: 100%; object-fit: cover; transition: transform .35s ease; }
+.project-card:hover .project-image img { transform: scale(1.04); }
+.project-category { margin: 18px 0 8px; color: var(--brown); font-size: 9px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; }
+.project-card h3 { margin: 0 0 15px; font: 400 25px var(--serif); }
+.project-card .text-link { font-size: 11px; }
+.process-section { background: #eeeae0; }
+.process-inner { display: grid; grid-template-columns: .9fr 1.1fr; gap: 10%; padding-block: 91px 98px; }
+.process-heading h2 { margin: 0; font-size: clamp(42px, 5.1vw, 62px); line-height: 1.08; }
+.steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; padding-top: 46px; }
+.step { padding-top: 15px; border-top: 1px solid #c9c4b8; }
+.step > span { color: var(--brown); font: 17px var(--serif); }
+.step h3 { margin: 31px 0 12px; font: 400 21px var(--serif); }
+.step p { margin: 0; color: #68685e; font-size: 11px; line-height: 1.7; }
+.contact-intro { max-width: 340px; margin: 24px 0; color: #5d6057; font-size: 14px; line-height: 1.8; }
+.contact-heading .button { margin-top: 5px; }
+
 .site-footer { padding: 48px 5.1% 18px; color: #f8f6f0; background: var(--green-deep); }
 .footer-main { display: grid; grid-template-columns: 1.4fr 1fr 1fr .6fr; gap: 40px; max-width: 1320px; margin: 0 auto; padding-bottom: 40px; }
 .footer-wordmark .wordmark-name { font-size: 27px; }
@@ -159,6 +193,7 @@ h1, h2 { font-family: var(--serif); font-weight: 400; letter-spacing: 0; }
   .contact { column-gap: 5%; }
   .contact-details { gap: 14px; }
   .footer-main { grid-template-columns: 1.1fr 1fr 1fr .7fr; gap: 20px; }
+  .process-inner { gap: 6%; }
 }
 
 @media (max-width: 620px) {
@@ -207,6 +242,20 @@ h1, h2 { font-family: var(--serif); font-weight: 400; letter-spacing: 0; }
   .footer-main { grid-template-columns: 1fr 1fr; gap: 28px 20px; padding-bottom: 28px; }
   .footer-wordmark { grid-column: 1 / -1; }
   .footer-bottom { gap: 16px; font-size: 8px; }
+  .services-inner { padding-block: 68px 58px; }
+  .services-heading, .projects-heading { align-items: start; flex-direction: column; gap: 15px; }
+  .services-heading > p, .projects-heading > p { margin: 0; }
+  .service-row { grid-template-columns: 45px 1fr 18px; gap: 12px; padding-block: 22px; }
+  .service-row h3 { font-size: 22px; }
+  .service-row p { grid-column: 2 / 3; grid-row: 2; }
+  .service-arrow { grid-column: 3; grid-row: 1; }
+  .projects { padding-block: 77px 80px; }
+  .project-grid { grid-template-columns: 1fr; gap: 42px; padding-top: 30px; }
+  .project-image { height: 270px; }
+  .process-inner { grid-template-columns: 1fr; gap: 44px; padding-block: 70px 74px; }
+  .steps { padding-top: 0; }
+  .step h3 { margin-top: 22px; }
+  .contact-intro { margin-top: 21px; }
 }
 
 @media (prefers-reduced-motion: reduce) {

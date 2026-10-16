@@ -1,6 +1,6 @@
-# Het Wapen van Nigtevecht
+# Jouw bedrijf hier
 
-Een compacte, Nederlandstalige demowebsite voor Het Wapen van Nigtevecht. Gebouwd met React, TypeScript en Vite; zonder database, CMS of reserveringssysteem.
+Een compacte, Nederlandstalige voorbeeldwebsite voor bedrijven die nog geen website hebben. Gebouwd met React, TypeScript en Vite; zonder database of CMS.
 
 ## Lokaal starten
 
@@ -15,7 +15,7 @@ Maak een productiebuild met `npm run build`. Bekijk die build lokaal met `npm ru
 
 ## Demo-inhoud vervangen
 
-Vervang de teksten tussen blokhaken in `src/App.tsx` door gecontroleerde bedrijfsinformatie. De sfeerfoto's in de hero, over-ons- en reserveringssectie zijn externe voorbeeldfoto's. Vervang die door eigen fotografie en werk de alt-teksten bij. De menupdf-knop is bewust nog niet actief.
+Vervang de voorbeeldteksten, contactgegevens en projectdata in `src/App.tsx` door gecontroleerde bedrijfsinformatie. De sfeerfoto's zijn externe voorbeeldfoto's; vervang die door eigen fotografie en werk de alt-teksten bij. De vormgeving is bewust algemeen gehouden zodat de site eenvoudig aan iedere branche kan worden aangepast.
 
 ## Deploy
 
